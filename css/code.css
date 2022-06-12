@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -400px left -100px, right -100px bottom -470px;
+}
+
+@media (max-width:767px) {
+    body {
+        background-position: top -730px left -600px, right -600px bottom -700px;
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container .card {
+    background-color: #fff;
+    max-width: 400px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .card .patter-card img {
+    width: 100%;
+}
+
+.container .card .victor img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -50px;
+}
+
+.container .card .one {
+    margin-top: 20px;
+}
+
+.container .card .one span:first-of-type {
+    color: hsl(229, 23%, 23%);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.container .card .one span:last-of-type {
+    margin-left: 5px;
+    color: hsl(227, 10%, 46%);
+}
+
+.container .card .two {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: hsl(227, 10%, 46%);
+    font-size: 15px;
+}
+
+.container .card .flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 45px;
+    border: 0.5px solid hsl(227, 10%, 90%);
+}
+
+.container .card .flex .box p {
+    color: hsl(229, 23%, 23%);
+    font-weight: bold;
+}
+
+.container .card .flex .box span {
+    color: hsl(227, 10%, 46%);
+    font-size: 10px;
+    letter-spacing: 1px
+}
